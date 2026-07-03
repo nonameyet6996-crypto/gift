@@ -224,9 +224,8 @@ function MemoryCard({ memory, index, isActive }: { memory: any; index: number; i
   return (
     <div className="w-full max-w-sm sm:max-w-md mx-auto px-4 relative z-10">
       <div
-        className={`text-center mb-6 transition-all duration-700 ${
-          isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-        }`}
+        className={`text-center mb-6 transition-all duration-700 ${isActive ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
       >
         <span className="font-body tracking-[0.3em] text-xs uppercase text-[#D97CA0]/80">
           {memory.eyebrow} · {index + 1} of 10
@@ -245,14 +244,13 @@ function MemoryCard({ memory, index, isActive }: { memory: any; index: number; i
         >
           {/* FRONT */}
           <div
-            className={`absolute inset-0 rounded-3xl shadow-xl border flex flex-col items-center justify-center gap-4 p-8 ${
-              isLavender
+            className={`absolute inset-0 rounded-3xl shadow-xl border flex flex-col items-center justify-center gap-4 p-8 ${isLavender
                 ? 'bg-[#E4DBF7] border-[#B9A6E8]/40'
                 : 'bg-[#F8DCE6] border-[#E9A9C4]/40'
-            }`}
-            style={{ 
-              backfaceVisibility: 'hidden', 
-              WebkitBackfaceVisibility: 'hidden' 
+              }`}
+            style={{
+              backfaceVisibility: 'hidden',
+              WebkitBackfaceVisibility: 'hidden'
             }}
           >
             {memory.image ? (
@@ -274,11 +272,10 @@ function MemoryCard({ memory, index, isActive }: { memory: any; index: number; i
 
           {/* BACK */}
           <div
-            className={`absolute inset-0 rounded-3xl shadow-xl border flex flex-col items-center justify-center gap-4 p-8 ${
-              isLavender
+            className={`absolute inset-0 rounded-3xl shadow-xl border flex flex-col items-center justify-center gap-4 p-8 ${isLavender
                 ? 'bg-white border-[#B9A6E8]/40'
                 : 'bg-white border-[#E9A9C4]/40'
-            }`}
+              }`}
             style={{
               backfaceVisibility: 'hidden',
               WebkitBackfaceVisibility: 'hidden',
@@ -324,13 +321,12 @@ function ProgressTrail({
             key={i}
             onClick={() => onJump(i)}
             aria-label={`Go to memory ${i + 1}`}
-            className={`rounded-full transition-all duration-500 ${
-              i === active
+            className={`rounded-full transition-all duration-500 ${i === active
                 ? 'h-4 w-4 scale-110 bg-[#D97CA0]'
                 : i < active
-                ? 'h-2.5 w-2.5 bg-[#E9A9C4]'
-                : 'h-2 w-2 bg-[#4A3F55]/15'
-            }`}
+                  ? 'h-2.5 w-2.5 bg-[#E9A9C4]'
+                  : 'h-2 w-2 bg-[#4A3F55]/15'
+              }`}
           />
         ))}
       </div>
@@ -521,11 +517,10 @@ export default function Page() {
             ref={(el) => {
               sectionRefs.current[i] = el;
             }}
-            className={`relative flex min-h-screen flex-col items-center justify-center py-24 ${
-              m.theme === 'lavender' ? 'bg-[#E4DBF7]/30' : 'bg-[#F8DCE6]/30'
-            }`}
+            className={`relative flex min-h-screen flex-col items-center justify-center py-24 ${m.theme === 'lavender' ? 'bg-[#E4DBF7]/30' : 'bg-[#F8DCE6]/30'
+              }`}
           >
-            <MemoryCard memory={m} index={i} />
+            <MemoryCard memory={m} index={i} isActive={active === i} />
           </section>
         )
       )}
