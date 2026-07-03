@@ -525,7 +525,7 @@ export default function Page() {
               m.theme === 'lavender' ? 'bg-[#E4DBF7]/30' : 'bg-[#F8DCE6]/30'
             }`}
           >
-            <MemoryCard memory={m} index={i} />
+            <MemoryCard memory={m} index={i} isActive={active === i} />
           </section>
         )
       )}
