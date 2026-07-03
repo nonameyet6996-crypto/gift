@@ -85,7 +85,7 @@ const MEMORIES: Memory[] = [
     eyebrow: 'Memory Five',
     title: 'The First Bouquet',
     theme: 'blush',
-    back: "You're also the first person I ever handed a bouquet to, hands a little too sweaty, heart a little too loud. Every flower in it was really just me trying to say I love you, before I had the courage to actually say it.",
+    back: "You're also the first person I ever gifted a bouquet to, heart a little too loud while ordering it and waiting to see how you react. Every petal in it was really just me trying to say I love you, before I had the courage to actually say it.",
     image: '/Photos/flower.jpeg',
   },
   {
