@@ -102,7 +102,7 @@ const MEMORIES: Memory[] = [
     title: 'The Safe Space',
     theme: 'blush',
     back: "I have never felt this at peace with anyone else, like I can be tired, weird, quiet, or completely unfiltered, and still be exactly enough. That kind of peace has a name, and it's you. I love you.",
-    image: null,
+    image: '/Photos/comfort.jpeg',
   },
   {
     emoji: '🔥',
