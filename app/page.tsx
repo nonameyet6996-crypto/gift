@@ -404,7 +404,7 @@ function FinaleSection() {
         </h1>
         <p className="mb-4 font-[family-name:var(--font-body)] text-base leading-relaxed text-[#4A3F55]/85 sm:text-lg">
           Ten memories, and I could have written a hundred more. From a trek that started
-          it all, to a walk that never felt long enough, to every quiet, safe, funny,
+          it all, till today when eveything still feels the best and to every quiet, safe, funny,
           racing-heart moment in between.
         </p>
         <p className="mt-8 font-[family-name:var(--font-display)] text-2xl italic text-[#D97CA0] sm:text-3xl">
